@@ -42,6 +42,32 @@ These store type that we can plug to EC2. They are of two type:
 _They must be in the same region as the EC2 instance to which we want to hook it._
 
 
+## AWS Simple Storage Service (S3)
+- A cloud storage service
+- Things are stored as objects, the file name being the key and the file as the value.
+- Auto scaled
+- Files can be uploaded and downloaded via APIs
+- The collections are called Buckets.
+- We add the files into the bucket and we get a URL for the file. `https://bucket_name.region.amazonaws.com/file_name.extension`
+- We can control the access to the bucket by specifying rules.
+
+## AWS Global Infrastructure 
+
+### Region
+Regions are a group of one or more AZs,
+
+### Availability Zones
+Physically and Logically distinct data centers, with their own power backups. They are interconnected with a low latency network. 
+
+### Edge Locations
+For faster context delivery the content is served from the nearest edge location(CDN and CloudFront)
+
+## Virtual Private Cloud (VPC)
+Each organisations might have their own networking practices and security policies to adhere to. VPCs are for such kind of use cases. In a VPC the creator gets the complete freedom to configure and setup the network configuration and security layers. They can control all the traffic. VPC can span across multiple AZs. Within a VPC we can create _Subnets_ which can either be connected to internet(pulic) or not(private). For communication btw the subnets and to the outside world we can maintain routing tables.
+
+
+## Security Groups
+This are like in-built firewalls. Users can set the access control and traffic using the security groups.
 
 
 

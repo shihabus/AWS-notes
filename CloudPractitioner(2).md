@@ -34,4 +34,23 @@ It is group or collection of services that the user create for ease of use and a
 To connect to the instance from Terminal
 `sudo ssh -i pem_file_path ec2-user@instance_public_dns`
 
+## Elastic Block Store
+These store type that we can plug to EC2. They are of two type:
+- SSD
+- Magnetic (HDD)
+
+_They must be in the same region as the EC2 instance to which we want to hook it._
+
+
+
+
+
+
+
+
+
+
+
+
+
 
